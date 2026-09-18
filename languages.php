@@ -1,0 +1,328 @@
+<?php
+$languages = [
+    'sl' => [
+        'dashboard' => 'Nadzorna plošča',
+        'bank' => 'Banka',
+        'email' => 'E-pošta',
+        'internet' => 'Internet',
+        'stores' => 'Trgovine',
+        'misc' => 'Ostalo',
+        'desktop' => 'Namizje',
+        'game' => 'Igre',
+        'network' => 'Omrežje',
+        'trash' => 'Koš',
+        'admin' => 'Administracija',
+        'login' => 'Prijava',
+        'register' => 'Registracija',
+        'logout' => 'Odjava',
+        'categories' => 'Kategorije',
+        'system' => 'Sistem',
+        'all_passwords' => 'Vsa gesla',
+        'select_password_to_view' => 'Izberite geslo za ogled',
+        'select_password_desc' => 'Iz seznama na levi izberite geslo, da si ogledate podrobnosti, jih kopirate ali uredite.',
+        'add_new_password' => 'Dodaj novo geslo',
+        'no_account' => 'Nimate računa?',
+        'register_here' => 'Registrirajte se tukaj',
+        'login_label' => 'Uporabniško ime ali e-pošta',
+        'username' => 'Uporabniško ime',
+        'password' => 'Geslo',
+        'login_btn' => 'Prijava',
+        'login_desc' => 'Prijavite se v svoj račun za dostop do gesel.',
+        'warning_title' => 'Password Manager',
+        'warning_badge' => 'Testno',
+        'warning_desc' => 'Eksperimentalno spletno orodje za upravljanje gesel, razvito kot demonstratorski projekt.',
+        'warning_important' => 'POMEMBNO OPOZORILO:',
+        'warning_text' => 'Orodje je namenjeno izključno vpogledu in testiranju. <strong>NE shranjujte pravih ali 
+občutljivih gesel!</strong> Vsi testni računi se samodejno izbrišejo po 2 do 3 dneh. Računi s pravimi gesli bodo 
+izbrisani takoj.',
+        'test_warning_title' => 'Opozorilo:',
+        'test_warning_text' => 'Pred vami je testna različica upravljalnika gesel. Namenjena je izključno testiranju — vsak ustvarjen račun se samodejno izbriše po treh dneh. Prosimo, da ne shranjujete dejanskih gesel ali občutljivih podatkov.',
+        'register_btn' => 'Registracija',
+        'register_desc' => 'Ustvarite nov račun za varno shranjevanje gesel.',
+        'email_label' => 'E-pošta',
+        'confirm_password' => 'Potrdi geslo',
+        'already_have_account' => 'Že imate račun?',
+        'login_here' => 'Prijavite se tukaj',
+        'fields_required' => 'Vsa polja so obvezna.',
+        'passwords_dont_match' => 'Gesli se ne ujemata.',
+        'username_taken' => 'Uporabniško ime je že zasedeno.',
+        'registration_success' => 'Registracija uspešna! Preverite svojo e-pošto za aktivacijsko povezavo.',
+        'registration_success_no_mail' => 'Registracija uspešna, vendar e-pošte ni bilo mogoče poslati. Prosimo, 
+        uporabite to povezavo za aktivacijo: ',
+        'activate_account' => 'Aktiviraj račun',
+        'registration_error' => 'Napaka pri registraciji: ',
+        'bank_desc' => 'Upravljajte s svojimi bančnimi gesli in dostopi.',
+        'email_desc' => 'Varni dostopi do vseh vaših poštnih predalov.',
+        'internet_desc' => 'Gesla za spletne portale, forume in storitve.',
+        'stores_desc' => 'Dostopi do spletnih trgovin in lojalnostnih programov.',
+        'misc_desc' => 'Vse ostalo, kar potrebuje varno shrambo.',
+        'desktop_desc' => 'Gesla in bližnjice, ki jih želite imeti pri roki na namizju.',
+        'game_desc' => 'Dostopi do vaših najljubših iger.',
+        'network_desc' => 'Podatki o domačem omrežju in usmerjevalniku.',
+        'trash_desc' => 'Izbrisana gesla, ki jih lahko obnovite ali trajno izbrišete.',
+        'add_new_password_h_bank' => 'Dodaj novo geslo - Banka',
+        'add_new_password_h_email' => 'Dodaj novo geslo - E-pošta',
+        'add_new_password_h_internet' => 'Dodaj novo geslo - Internet',
+        'add_new_password_h_stores' => 'Dodaj novo geslo - Trgovine',
+        'add_new_password_h_other' => 'Dodaj novo geslo - Ostalo',
+        'add_new_password_h_desktop' => 'Dodaj novo geslo - Namizje',
+        'add_new_password_h_game' => 'Dodaj novo geslo - Igre',
+        'add_new_password_h_network' => 'Dodaj novo geslo - Omrežje',
+        'add_new_password_title' => 'NASLOV',
+        'add_new_password_username' => 'UPORABNIŠKO IME',
+        'add_new_password_password' => 'GESLO',
+        'add_new_password_email' => 'E-POŠTA',
+        'add_new_password_web_adress' => 'SPLETNI NASLOV',
+        'add_new_password_save' => 'SHRANI',
+        'add_new_password_empty_state' => 'Ni še shranjenih gesel v tej kategoriji.',
+        'add_new_password_alert_danger' => 'Napaka pri poizvedbi: ',
+        'show_card_remove' => 'Odstrani',
+        'show_card_username' => 'Uporabniško ime',
+        'show_card_copy' => 'Kopiraj',
+        'show_card_password' => 'Geslo',
+        'show_card_show' => 'Pokaži',
+        'show_card_email' => 'E-pošta',
+        'show_card_web_adress' => 'Spletna stran',
+        'two_fa_title' => 'Dvo-stopenjska avtentikacija',
+        'two_fa_desc' => 'Vnesite 6-mestno kodo iz vaše avtentikacijske aplikacije.',
+        'two_fa_label' => 'Vnesite kodo:',
+        'two_fa_verify' => 'Preveri kodo',
+        'two_fa_error' => 'Napačna koda. Poskusite znova.',
+        'two_fa_cancel' => 'Prekliči in se vrni na prijavo',
+        'two_fa_loading' => 'Preverjanje...',
+        'confirm_delete' => 'Ste prepričani, da želite izbrisati ta zapis?',
+        'edit' => 'Uredi',
+        'edit_password' => 'Uredi geslo',
+        'card_number' => 'Številka kartice',
+        'card_pin' => 'PIN kartice',
+        'card_cvv' => 'Varnostna koda (CVV)',
+        'wifi_5g' => 'Wifi 5GHz geslo',
+        'wifi_2_4g' => 'Wifi 2.4GHz geslo',
+        'router_ip' => 'IP usmerjevalnika',
+        'auth_code' => 'Avtentikacijska koda',
+        'restore' => 'Obnovi',
+        'permanent_delete' => 'Trajno izbriši',
+        'confirm_permanent_delete' => 'Ste prepričani, da želite trajno izbrisati ta zapis?',
+        'gen_password' => 'Generiraj geslo',
+        'gen_length' => 'Dolžina gesla:',
+        'gen_all_chars' => 'Ali želiš geslo z vsemi znaki',
+        'gen_alphanum' => 'Ali želiš geslo samo s črkami in številkami',
+        'gen_add_btn' => 'Dodaj geslo',
+        'recovery_code_title' => 'Obnovitvena koda (Recovery Code)',
+        'recovery_code_desc' => 'To kodo OBVEZNO shranite na varno mesto. Je edini način za ponastavitev vašega gesla in 
+        dostop do podatkov, če pozabite glavno geslo.',
+        'recovery_code_warning' => 'Te kode vam ne moremo več prikazati, zato jo shranite zdaj!',
+        'registration_success_recovery' => 'Registracija uspešna! Spodaj je vaša obnovitvena koda. Preverite tudi 
+        e-pošto za aktivacijo.',
+        'recovery_modal_text' => 'Prosim sharnite ta obnovitveni ključ, ker ob izgubi gesla je to edina možnost, da 
+        povrnete vaša gesla nazaj! Prosim ne izgubite ga!',
+        'recovery_modal_confirm_text' => 'Potrdite da ste kopirali in shranili Recovery Key!',
+        'recovery_modal_confirm_btn' => 'Potrdi',
+        'forgot_password' => 'Pozabljeno geslo?',
+        'export_file' => 'Izvozi datoteko',
+        'export_desc' => 'Izvozite svoja gesla v CSV ali XML formatu.',
+        'export_in_progress' => 'Pripravite svoja gesla za izvoz v CSV ali XML format.',
+        'export_warning' => 'OPOZORILO: CSV in XML datoteki nista šifrirani. Ko datoteko uvozite v KeePass ali druge 
+        upravljalnike gesel, jo obvezno trajno izbrišite s svojega računalnika!',
+        'export_xml_btn' => 'Prenesi XML datoteko',
+        'export_csv_btn' => 'Prenesi CSV datoteko (Priporočeno)',
+        'export_success' => 'Datoteka je pripravljena za prenos.',
+        'export_confirm_msg' => 'Ali ste prepričani, da želite izvoziti gesla v nešifrirano %s datoteko? Po uvozu v upravljalnik gesel jo prosim takoj izbrišite.',
+        // Navodila: XML -> KeePass
+        'export_how_to_keepass' => 'Navodila za uvoz XML datoteke v KeePass:',
+        'export_xml_step1' => 'Prenesite XML datoteko s klikom na spodnji gumb.',
+        'export_xml_step2' => 'V program KeePass <strong>ne</strong> vpisujte gesla za odpiranje te datoteke, ker XML ni 
+baza.',
+        'export_xml_step3' => 'V KeePass v <strong>zgornjem meniju</strong> izberite 
+<strong>File &gt; Import... &gt; KeePass XML (2.x)</strong>.',
+        'export_xml_step4' => 'Izberite preneseno XML datoteko. Podatki se bodo uvozili v vašo KeePass bazo.',
+        'export_xml_step5' => 'Ker KeePass ne zna prikazati OTP kod, uvoženo bazo shranite in odprite v 
+<strong>KeePassXC</strong>, kjer se bodo OTP kode pravilno prikazale.',
+        // Navodila: CSV -> KeePassXC
+        'export_how_to_keepassxc' => 'Navodila za uvoz CSV datoteke v KeePassXC:',
+        'export_csv_step1' => 'Prenesite CSV datoteko s klikom na spodnji gumb.',
+        'export_csv_step2' => 'V KeePassXC kliknite <strong>"Import from CSV"</strong>, ki je viden takoj na začetnem 
+zaslonu.',
+        'export_csv_step3' => 'Izberite preneseno CSV datoteko in mapirajte stolpce:
+<ol style="padding-left: 1.5rem; margin: 1rem 0;">
+<li style="margin: 0.3rem 0;"><span style="display: inline-block; border-radius: 6px; 
+border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold;">Group</span></li>
+<li style="margin: 0.3rem 0;"><span style="display: inline-block; border-radius: 6px; 
+border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold;">Title</span></li>
+<li style="margin: 0.3rem 0;"><span style="display: inline-block; border-radius: 6px; 
+border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold;">Username</span></li>
+<li style="margin: 0.3rem 0;"><span style="display: inline-block; border-radius: 6px; 
+border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold;">Password</span></li>
+<li style="margin: 0.3rem 0;"><span style="display: inline-block; border-radius: 6px; 
+border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold;">URL</span></li>
+<li style="margin: 0.3rem 0;"><span style="display: inline-block; border-radius: 6px; 
+border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold;">Notes</span></li>
+<li style="margin: 0.3rem 0;"><span style="display: inline-block; border-radius: 6px; 
+border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold;">TOTP</span></li>
+</ol>',
+    ],
+
+    'en' => [
+        'dashboard' => 'Dashboard',
+        'bank' => 'Bank',
+        'email' => 'E-mail',
+        'internet' => 'Internet',
+        'stores' => 'Stores',
+        'misc' => 'Other',
+        'desktop' => 'Desktop',
+        'game' => 'Games',
+        'network' => 'Network',
+        'trash' => 'Trash',
+        'admin' => 'Administration',
+        'login' => 'Login',
+        'register' => 'Registration',
+        'logout' => 'Logout',
+        'categories' => 'Categories',
+        'system' => 'System',
+        'all_passwords' => 'All Passwords',
+        'select_password_to_view' => 'Select a password to view',
+        'select_password_desc' => 'Select a password from the list on the left to view details, copy or edit them.',
+        'add_new_password' => 'Add New Password',
+        'no_account' => "Don't have an account?",
+        'register_here' => 'Register here',
+        'login_label' => 'Username or email',
+        'username' => 'Username',
+        'password' => 'Password',
+        'login_btn' => 'Login',
+        'login_desc' => 'Login to your account to access passwords.',
+        'warning_title' => 'Password Manager',
+        'warning_badge' => 'Demo',
+        'warning_desc' => 'Experimental online password management tool, developed as a demonstration project.',
+        'warning_important' => 'IMPORTANT WARNING:',
+        'warning_text' => 'The tool is intended exclusively for insight and testing. 
+<strong>DO NOT save real or sensitive passwords!</strong> All test accounts are automatically deleted after 2 to 3 days. 
+Accounts with real passwords will be deleted immediately.',
+        'test_warning_title' => 'Warning:',
+        'test_warning_text' => 'This is a test version of the password manager. It is intended exclusively for testing — each created account is automatically deleted after three days. Please do not store actual passwords or sensitive data.',
+        'register_btn' => 'Registration',
+        'register_desc' => 'Create a new account to safely store your passwords.',
+        'email_label' => 'Email',
+        'confirm_password' => 'Confirm Password',
+        'already_have_account' => 'Already have an account?',
+        'login_here' => 'Login here',
+        'fields_required' => 'All fields are required.',
+        'passwords_dont_match' => 'Passwords do not match.',
+        'username_taken' => 'Username is already taken.',
+        'registration_success' => 'Registration successful! Check your email for activation link.',
+        'registration_success_no_mail' => 'Registration successful, but email could not be sent. Please use this link 
+        to activate: ',
+        'activate_account' => 'Activate account',
+        'registration_error' => 'Registration error: ',
+        'bank_desc' => 'Manage your bank passwords and accesses.',
+        'email_desc' => 'Secure access to all your mailboxes.',
+        'internet_desc' => 'Passwords for web portals, forums and services.',
+        'stores_desc' => 'Access to online stores and loyalty programs.',
+        'misc_desc' => 'Everything else that needs secure storage.',
+        'desktop_desc' => 'Passwords and shortcuts you want to keep handy on your desktop.',
+        'game_desc' => 'Access to your favorite games.',
+        'network_desc' => 'Home network and router information.',
+        'trash_desc' => 'Deleted passwords that you can restore or permanently delete.',
+        'add_new_password_h_bank' => 'Add New Password - Bank',
+        'add_new_password_h_email' => 'Add New Password - Email',
+        'add_new_password_h_internet' => 'Add New Password - Internet',
+        'add_new_password_h_stores' => 'Add New Password - Stores',
+        'add_new_password_h_other' => 'Add New Password - Other',
+        'add_new_password_h_desktop' => 'Add New Password - Desktop',
+        'add_new_password_h_game' => 'Add New Password - Games',
+        'add_new_password_h_network' => 'Add New Password - Network',
+        'add_new_password_title' => 'TITLE',
+        'add_new_password_username' => 'USERNAME',
+        'add_new_password_password' => 'PASSWORD',
+        'add_new_password_email' => 'EMAIL',
+        'add_new_password_web_adress' => 'WEB ADDRESS',
+        'add_new_password_save' => 'SAVE',
+        'add_new_password_empty_state' => 'No passwords saved in this category yet.',
+        'add_new_password_alert_danger' => 'Query error: ',
+        'show_card_remove' => 'Remove',
+        'show_card_username' => 'Username',
+        'show_card_copy' => 'Copy',
+        'show_card_password' => 'Password',
+        'show_card_show' => 'Show',
+        'show_card_email' => 'Email',
+        'show_card_web_adress' => 'Website',
+        'two_fa_title' => 'Two-Factor Authentication',
+        'two_fa_desc' => 'Enter the 6-digit code from your authenticator app.',
+        'two_fa_label' => 'Enter code:',
+        'two_fa_verify' => 'Verify Code',
+        'two_fa_error' => 'Invalid code. Please try again.',
+        'two_fa_cancel' => 'Cancel and return to login',
+        'two_fa_loading' => 'Verifying...',
+        'confirm_delete' => 'Are you sure you want to delete this record?',
+        'edit' => 'Edit',
+        'edit_password' => 'Edit Password',
+        'card_number' => 'Card Number',
+        'card_pin' => 'Card PIN',
+        'card_cvv' => 'Security Code (CVV)',
+        'wifi_5g' => 'Wifi 5GHz Password',
+        'wifi_2_4g' => 'Wifi 2.4GHz Password',
+        'router_ip' => 'Router IP',
+        'auth_code' => 'Authentication Code',
+        'restore' => 'Restore',
+        'permanent_delete' => 'Delete permanently',
+        'confirm_permanent_delete' => 'Are you sure you want to permanently delete this record?',
+        'gen_password' => 'Generate Password',
+        'gen_length' => 'Password length:',
+        'gen_all_chars' => 'Password with all characters',
+        'gen_alphanum' => 'Letters and numbers only',
+        'gen_add_btn' => 'Add Password',
+        'recovery_code_title' => 'Recovery Code',
+        'recovery_code_desc' => 'You MUST save this code in a safe place. It is the only way to reset your password and 
+        access your data if you forget your master password.',
+        'recovery_code_warning' => 'We cannot show this code to you again, so save it now!',
+        'registration_success_recovery' => 'Registration successful! Below is your recovery code. Also check your email 
+        for activation.',
+        'recovery_modal_text' => 'Please save this recovery key, because if you lose your password, this is the only way 
+        to recover your passwords! Please do not lose it!',
+        'recovery_modal_confirm_text' => 'Confirm that you have copied and saved the Recovery Key!',
+        'recovery_modal_confirm_btn' => 'Confirm',
+        'forgot_password' => 'Forgot password?',
+        'export_file' => 'Export file',
+        'export_desc' => 'Export your passwords in CSV or XML format.',
+        'export_in_progress' => 'Prepare your passwords for export in CSV or XML format.',
+        'export_warning' => 'WARNING: CSV and XML files are not encrypted. Once you import the file into KeePass or 
+        another password manager, be sure to permanently delete it from your computer!',
+        'export_btn' => 'Download XML file',
+        'export_csv_btn' => 'Download CSV file (Recommended)',
+        'export_success' => 'The file is ready for download.',
+        'export_confirm_msg' => 'Are you sure you want to export your passwords to an unencrypted %s file? Please delete it immediately after importing it into your password manager.',
+
+        'export_how_to_keepass' => 'Instructions for importing the XML file into KeePass:',
+        'export_xml_step1' => 'Download the XML file by clicking the button below.',
+        'export_xml_step2' => 'In KeePass, <strong>do not</strong> enter a password to open this file, because XML is 
+not a database.',
+        'export_xml_step3' => 'In KeePass, select <strong>File &gt; Import... &gt; KeePass XML (2.x)</strong> in the 
+<strong>top menu</strong>.',
+        'export_xml_step4' => 'Select the downloaded XML file. The data will be imported into your KeePass database.',
+        'export_xml_step5' => 'Since KeePass cannot display OTP codes, save the imported database and open it in 
+<strong>KeePassXC</strong>, where the OTP codes will be displayed correctly.',
+
+        'export_how_to_keepassxc' => 'Instructions for importing the CSV file into KeePassXC:',
+        'export_csv_step1' => 'Download the CSV file by clicking the button below.',
+        'export_csv_step2' => 'In KeePassXC, click <strong>"Import from CSV"</strong>, which is immediately visible on 
+the start screen.',
+        'export_csv_step3' => 'Select the downloaded CSV file and map the columns as follows: <strong>1:Group, 2:Title, 
+3:Username, 4:Password, 5:URL, 6:Notes, 7:TOTP</strong>.',
+        'export_xml_location' => 'Important: The clock icon in KeePassXC means that 2FA has been imported correctly. To 
+        display the code, click the clock or press Ctrl+T.',
+    ]
+];
+
+if (!isset($_SESSION['lang'])) {
+    $_SESSION['lang'] = 'sl';
+}
+
+if (isset($_GET['lang']) && in_array($_GET['lang'], ['sl', 'en'])) {
+    $_SESSION['lang'] = $_GET['lang'];
+}
+
+$lang = $_SESSION['lang'];
+
+function __($key) {
+    global $languages, $lang;
+    return $languages[$lang][$key] ?? $key;
+}

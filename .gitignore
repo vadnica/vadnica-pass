@@ -1,0 +1,30 @@
+# === OBČUTLJIVO – nikoli v repo ===
+config.php
+*.sql
+*.sql.gz
+*.db
+*.sqlite
+
+# === SISTEMSKE DATOTEKE ===
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux / macOS
+.DS_Store
+*~
+
+# === IDE: PHPSTORM ===
+.idea/
+*.iml
+
+# === BACKUP SKRIPTI (lokalne poti!) ===
+*.bat
+*.sh
+
+# === PHP začasne/runtime datoteke ===
+vendor/
+composer.lock
+node_modules/
+*.log
