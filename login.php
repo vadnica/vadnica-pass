@@ -68,6 +68,11 @@ include "header.php";
 include "navbar.php";
 ?>
 
+<div class="auth-page-header">
+    <h1><?php echo __('login_title'); ?></h1>
+    <p><?php echo __('login_desc'); ?></p>
+</div>
+
 <div class="auth-container auth-page">
     <div class="auth-stack">
         <div class="test-notice-card">
@@ -75,10 +80,6 @@ include "navbar.php";
             <p><?php echo __('test_warning_text'); ?></p>
         </div>
         <div class="auth-card">
-            <div class="auth-header">
-                <p><?php echo __('login_desc'); ?></p>
-            </div>
-            
             <?php if ($error): ?>
                 <div class="alert alert-danger"><?php echo $error; ?></div>
             <?php endif; ?>

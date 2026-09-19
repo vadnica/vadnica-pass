@@ -12,6 +12,7 @@ $languages = [
         'network' => 'Omrežje',
         'trash' => 'Koš',
         'admin' => 'Administracija',
+        'menu' => 'Meni',
         'login' => 'Prijava',
         'register' => 'Registracija',
         'logout' => 'Odjava',
@@ -27,7 +28,10 @@ $languages = [
         'username' => 'Uporabniško ime',
         'password' => 'Geslo',
         'login_btn' => 'Prijava',
-        'login_desc' => 'Prijavite se v svoj račun za dostop do gesel.',
+        'login_title' => 'Varen upravljalnik gesel',
+        'login_desc' => 'Zero-knowledge upravljalnik gesel, ki vaše podatke šifrira v brskalniku, preden se pošljejo na 
+        strežnik. Vaše glavno geslo se nikoli ne shrani, do vaših gesel pa nimamo dostopa niti sami. Varno shranjujte 
+        gesla, 2FA kode in druge podatke.',
         'warning_title' => 'Password Manager',
         'warning_badge' => 'Testno',
         'warning_desc' => 'Eksperimentalno spletno orodje za upravljanje gesel, razvito kot demonstratorski projekt.',
@@ -36,7 +40,9 @@ $languages = [
 občutljivih gesel!</strong> Vsi testni računi se samodejno izbrišejo po 2 do 3 dneh. Računi s pravimi gesli bodo 
 izbrisani takoj.',
         'test_warning_title' => 'Opozorilo:',
-        'test_warning_text' => 'Pred vami je testna različica upravljalnika gesel. Namenjena je izključno testiranju — vsak ustvarjen račun se samodejno izbriše po treh dneh. Prosimo, da ne shranjujete dejanskih gesel ali občutljivih podatkov.',
+        'test_warning_text' => 'Pred vami je testna različica upravljalnika gesel. Namenjena je izključno testiranju — 
+        vsak ustvarjen račun se samodejno izbriše po treh dneh. Prosimo, da ne shranjujete dejanskih gesel ali 
+        občutljivih podatkov.',
         'register_btn' => 'Registracija',
         'register_desc' => 'Ustvarite nov račun za varno shranjevanje gesel.',
         'email_label' => 'E-pošta',
@@ -127,7 +133,8 @@ izbrisani takoj.',
         'export_xml_btn' => 'Prenesi XML datoteko',
         'export_csv_btn' => 'Prenesi CSV datoteko (Priporočeno)',
         'export_success' => 'Datoteka je pripravljena za prenos.',
-        'export_confirm_msg' => 'Ali ste prepričani, da želite izvoziti gesla v nešifrirano %s datoteko? Po uvozu v upravljalnik gesel jo prosim takoj izbrišite.',
+        'export_confirm_msg' => 'Ali ste prepričani, da želite izvoziti gesla v nešifrirano %s datoteko? Po uvozu v 
+        upravljalnik gesel jo prosim takoj izbrišite.',
         // Navodila: XML -> KeePass
         'export_how_to_keepass' => 'Navodila za uvoz XML datoteke v KeePass:',
         'export_xml_step1' => 'Prenesite XML datoteko s klikom na spodnji gumb.',
@@ -174,6 +181,7 @@ border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold
         'network' => 'Network',
         'trash' => 'Trash',
         'admin' => 'Administration',
+        'menu' => 'Menu',
         'login' => 'Login',
         'register' => 'Registration',
         'logout' => 'Logout',
@@ -189,7 +197,10 @@ border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold
         'username' => 'Username',
         'password' => 'Password',
         'login_btn' => 'Login',
-        'login_desc' => 'Login to your account to access passwords.',
+        'login_title' => 'Secure Password Manager',
+        'login_desc' => 'A zero-knowledge password manager that encrypts your data in the browser before sending it to 
+        the server. Your master password is never stored, and even we cannot access your credentials. Safely store 
+        passwords, 2FA codes, and more.',
         'warning_title' => 'Password Manager',
         'warning_badge' => 'Demo',
         'warning_desc' => 'Experimental online password management tool, developed as a demonstration project.',
@@ -198,7 +209,9 @@ border: 1px solid rgba(0, 0, 0, 0.6); padding: 0.15rem 0.6rem; font-weight: bold
 <strong>DO NOT save real or sensitive passwords!</strong> All test accounts are automatically deleted after 2 to 3 days. 
 Accounts with real passwords will be deleted immediately.',
         'test_warning_title' => 'Warning:',
-        'test_warning_text' => 'This is a test version of the password manager. It is intended exclusively for testing — each created account is automatically deleted after three days. Please do not store actual passwords or sensitive data.',
+        'test_warning_text' => 'This is a test version of the password manager. It is intended exclusively for testing — 
+        each created account is automatically deleted after three days. Please do not store actual passwords or 
+        sensitive data.',
         'register_btn' => 'Registration',
         'register_desc' => 'Create a new account to safely store your passwords.',
         'email_label' => 'Email',
